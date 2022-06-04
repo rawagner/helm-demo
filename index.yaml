@@ -11,7 +11,7 @@ entries:
     name: cluster-template
     type: application
     urls:
-    - cluster-template-0.1.0.tgz
+    - https://rawagner.github.io/helm-demo/cluster-template-0.1.0.tgz
     version: 0.1.0
   demo-template:
   - annotations:
@@ -24,6 +24,6 @@ entries:
     name: demo-template
     type: application
     urls:
-    - demo-template-0.1.0.tgz
+    - https://rawagner.github.io/helm-demo/demo-template-0.1.0.tgz
     version: 0.1.0
 generated: "2022-06-04T22:58:54.699291939+02:00"
