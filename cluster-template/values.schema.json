@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "required": [
+      "name",
+      "clusterset"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "namespace": {
+        "type": "string"
+      },
+      "baseDnsDomain": {
+        "type": "string"
+      }
+    }
+  }
