@@ -6,7 +6,8 @@
       "namespace",
       "baseDnsDomain",
       "pullSecret",
-      "sshPublicKey"
+      "sshPublicKey",
+      "releaseImage"
     ],
     "properties": {
       "name": {
@@ -22,6 +23,9 @@
         "type": "string"
       },
       "sshPublicKey": {
+        "type": "string"
+      },
+      "releaseImage": {
         "type": "string"
       }
     }

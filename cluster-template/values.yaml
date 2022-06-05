@@ -7,3 +7,4 @@ namespace: default
 baseDnsDomain: rw.com
 #pullSecret
 #sshPublicKey
+#releaseImage
