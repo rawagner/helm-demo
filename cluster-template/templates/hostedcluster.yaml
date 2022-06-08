@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Values.namespace }}
 spec:
   release:
-    image: {{ .Values.releaseImage }}
+    image: quay.io/openshift-release-dev/ocp-release:4.10.16-x86_64
   pullSecret:
     name: pullsecret-cluster-{{ .Values.name }}
   sshKey:
