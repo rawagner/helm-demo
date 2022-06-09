@@ -1,15 +1,15 @@
 apiVersion: hypershift.openshift.io/v1alpha1
 kind: HostedCluster
 metadata:
-  name: {{ .Values.name }}
-  namespace: {{ .Values.namespace }}
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
 spec:
   release:
     image: quay.io/openshift-release-dev/ocp-release:4.10.16-x86_64
   pullSecret:
-    name: pullsecret-cluster-{{ .Values.name }}
+    name: pullsecret-cluster-{{ .Release.Name }}
   sshKey:
-    name: sshkey-cluster-{{ .Values.name }}
+    name: sshkey-cluster-{{ .Release.Name }}
   networking:
     podCIDR: 10.132.0.0/14
     serviceCIDR: 172.31.0.0/16
@@ -19,32 +19,32 @@ spec:
     type: Agent
     agent:
       agentNamespace: default
-  infraID: {{ .Values.name }}
+  infraID: {{ .Release.Name }}
   dns:
     baseDomain: {{ .Values.baseDnsDomain }}
   services:
   - service: APIServer
     servicePublishingStrategy:
       nodePort:
-        address: api.{{ .Values.name }}.{{ .Values.baseDnsDomain }}
+        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
       type: NodePort
   - service: OAuthServer
     servicePublishingStrategy:
       nodePort:
-        address: api.{{ .Values.name }}.{{ .Values.baseDnsDomain }}
+        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
       type: NodePort
   - service: OIDC
     servicePublishingStrategy:
       nodePort:
-        address: api.{{ .Values.name }}.{{ .Values.baseDnsDomain }}
+        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
       type: None
   - service: Konnectivity
     servicePublishingStrategy:
       nodePort:
-        address: api.{{ .Values.name }}.{{ .Values.baseDnsDomain }}
+        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
       type: NodePort
   - service: Ignition
     servicePublishingStrategy:
       nodePort:
-        address: api.{{ .Values.name }}.{{ .Values.baseDnsDomain }}
+        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
       type: NodePort
