@@ -5,9 +5,9 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-01T09:58:46.814161878+02:00"
+    created: "2022-08-01T11:20:42.173295235+02:00"
     description: A Helm chart for Kubernetes
-    digest: 40127342bef8b5e6ef53d480379ec50dbd9e3fc0ed8c774e455be68657e6e902
+    digest: 00aa513b239f49f8a4090ae21a5810a6a5608ca5f133e94f58f32033d6b940a9
     name: cluster-template
     type: application
     urls:
@@ -18,7 +18,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-01T09:58:46.814462642+02:00"
+    created: "2022-08-01T11:20:42.173447646+02:00"
     description: A Helm chart for Kubernetes
     digest: dde7adf279d1834fe65d0ee4898f109f31936bd0462cd2a3cfb7c378286f7655
     name: demo-template
@@ -26,4 +26,4 @@ entries:
     urls:
     - demo-template-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-01T09:58:46.813579601+02:00"
+generated: "2022-08-01T11:20:42.172984031+02:00"
