@@ -5,25 +5,25 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-09T19:32:17.381163907+02:00"
+    created: "2022-08-01T09:58:46.814161878+02:00"
     description: A Helm chart for Kubernetes
-    digest: 6634cebc2a9d1d9d26cdd4289cd82741c69ca981181d36c01e92812a183496c0
+    digest: 40127342bef8b5e6ef53d480379ec50dbd9e3fc0ed8c774e455be68657e6e902
     name: cluster-template
     type: application
     urls:
-    - https://rawagner.github.io/helm-demo/cluster-template-0.1.0.tgz
+    - cluster-template-0.1.0.tgz
     version: 0.1.0
   demo-template:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-09T19:32:17.38136749+02:00"
+    created: "2022-08-01T09:58:46.814462642+02:00"
     description: A Helm chart for Kubernetes
     digest: dde7adf279d1834fe65d0ee4898f109f31936bd0462cd2a3cfb7c378286f7655
     name: demo-template
     type: application
     urls:
-    - https://rawagner.github.io/helm-demo/demo-template-0.1.0.tgz
+    - demo-template-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-09T19:32:17.379196857+02:00"
+generated: "2022-08-01T09:58:46.813579601+02:00"
