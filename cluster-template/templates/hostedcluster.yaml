@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
 spec:
   release:
-    image: quay.io/openshift-release-dev/ocp-release:4.10.16-x86_64
+    image: quay.io/openshift-release-dev/ocp-release:4.11.0-0.nightly-multi-2022-07-11-105614-x86_64
   pullSecret:
     name: pullsecret-cluster-{{ .Release.Name }}
   sshKey:
@@ -14,37 +14,26 @@ spec:
     podCIDR: 10.132.0.0/14
     serviceCIDR: 172.31.0.0/16
     machineCIDR: 192.168.122.0/24
-    networkType: OVNKubernetes
   platform:
     type: Agent
     agent:
-      agentNamespace: default
+      agentNamespace: rw-hs-infra
   infraID: {{ .Release.Name }}
   dns:
     baseDomain: {{ .Values.baseDnsDomain }}
   services:
   - service: APIServer
     servicePublishingStrategy:
-      nodePort:
-        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
-      type: NodePort
+      type: LoadBalancer
   - service: OAuthServer
     servicePublishingStrategy:
-      nodePort:
-        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
-      type: NodePort
+      type: Route
   - service: OIDC
     servicePublishingStrategy:
-      nodePort:
-        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
-      type: None
+      type: Route
   - service: Konnectivity
     servicePublishingStrategy:
-      nodePort:
-        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
-      type: NodePort
+      type: Route
   - service: Ignition
     servicePublishingStrategy:
-      nodePort:
-        address: api.{{ .Release.Name }}.{{ .Values.baseDnsDomain }}
-      type: NodePort
+      type: Route

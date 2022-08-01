@@ -1,0 +1,18 @@
+apiVersion: hypershift.openshift.io/v1alpha1
+kind: NodePool
+metadata:
+  name: 'nodepool-{{ .Release.Name }}'
+  namespace: {{ .Release.Namespace }}
+spec:
+  clusterName: {{ .Release.Name }}
+  replicas: 1
+  management:
+    autoRepair: false
+    upgradeType: InPlace
+  platform:
+    type: Agent
+    agent:
+      agentLabelSelector:
+        matchLabels: {}
+  release:
+    image: quay.io/openshift-release-dev/ocp-release:4.11.0-0.nightly-multi-2022-07-11-105614-x86_64
