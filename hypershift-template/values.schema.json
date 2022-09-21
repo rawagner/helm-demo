@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "required": [
+      "baseDnsDomain",
+      "pullSecret",
+      "sshPublicKey"
+    ],
+    "properties": {
+      "baseDnsDomain": {
+        "type": "string"
+      },
+      "pullSecret": {
+        "type": "string"
+      },
+      "sshPublicKey": {
+        "type": "string"
+      }
+    }
+  }
