@@ -3,17 +3,13 @@
     "type": "object",
     "required": [
       "baseDnsDomain",
-      "pullSecret",
-      "sshPublicKey"
+      "pullSecret"
     ],
     "properties": {
       "baseDnsDomain": {
         "type": "string"
       },
       "pullSecret": {
-        "type": "string"
-      },
-      "sshPublicKey": {
         "type": "string"
       }
     }

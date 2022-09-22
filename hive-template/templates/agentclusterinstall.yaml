@@ -1,0 +1,20 @@
+apiVersion: extensions.hive.openshift.io/v1beta1
+kind: AgentClusterInstall
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  clusterDeploymentRef:
+    name: {{ .Release.Name }}
+  provisionRequirements:
+    controlPlaneAgents: 3
+  imageSetRef:
+    name: '411'
+  networking:
+    clusterNetwork:
+    - cidr: 10.128.0.0/14
+      hostPrefix: 23
+    serviceNetwork:
+    - 172.30.0.0/16
+  apiVIP: 192.168.122.10
+  ingressVIP: 192.168.122.23
