@@ -9,7 +9,7 @@ spec:
   provisionRequirements:
     controlPlaneAgents: 3
   imageSetRef:
-    name: 'img4.9.48-x86-64-appsub'
+    name: 'img4.10.33-x86-64-appsub'
   networking:
     clusterNetwork:
     - cidr: 10.128.0.0/14
