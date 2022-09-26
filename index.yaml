@@ -5,9 +5,9 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-24T14:49:53.72781899+02:00"
+    created: "2022-09-26T09:58:45.164756982+02:00"
     description: A Helm chart for Kubernetes
-    digest: 85418ac0ad0128a6972053af557d3b93189caf3b15c196b1f5356f5425873c98
+    digest: 19fcd1ce7e4e55433bb1a921643d72d82b73305f020f73c11391514660f28132
     name: hive-template
     type: application
     urls:
@@ -18,7 +18,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-09-24T14:49:53.7280426+02:00"
+    created: "2022-09-26T09:58:45.164959803+02:00"
     description: A Helm chart for Kubernetes
     digest: a47cf46a2551bbec37fd7973fc8fe4b66e9fe320c564f9de218a942f1969074b
     name: hypershift-template
@@ -26,4 +26,4 @@ entries:
     urls:
     - hypershift-template-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-24T14:49:53.727366648+02:00"
+generated: "2022-09-26T09:58:45.164435385+02:00"
