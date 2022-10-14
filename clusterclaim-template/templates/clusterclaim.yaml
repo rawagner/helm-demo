@@ -4,5 +4,5 @@ metadata:
   name: {{ .Release.Name }}
   namespace: default
 spec:
-  clusterPoolName: awspool
+  clusterPoolName: awspool-{{ randNumeric 3 }}
   lifetime: 8h
