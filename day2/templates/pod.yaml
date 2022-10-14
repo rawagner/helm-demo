@@ -12,7 +12,7 @@ spec:
       type: RuntimeDefault
   containers:
     - name: httpd
-      image: {{ Values.image }}
+      image: {{ .Values.image }}
       ports:
         - containerPort: 8080
       securityContext:
