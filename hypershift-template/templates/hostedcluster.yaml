@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
 spec:
   release:
-    image: quay.io/openshift-release-dev/ocp-release:4.11.0-0.nightly-multi-2022-07-11-105614-x86_64
+    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-{{ .Values.ocpArch }}
   pullSecret:
     name: pullsecret-cluster-{{ .Release.Name }}
   sshKey:
@@ -25,7 +25,7 @@ spec:
   services:
   - service: APIServer
     servicePublishingStrategy:
-      type: LoadBalancer
+      type: {{ .Values.APIPublishingStrategy }}
   - service: OAuthServer
     servicePublishingStrategy:
       type: Route

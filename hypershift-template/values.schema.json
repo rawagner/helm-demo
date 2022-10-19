@@ -1,20 +1,24 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "type": "object",
-    "required": [
-      "baseDnsDomain",
-      "pullSecret",
-      "sshPublicKey"
-    ],
-    "properties": {
-      "baseDnsDomain": {
-        "type": "string"
-      },
-      "pullSecret": {
-        "type": "string"
-      },
-      "sshPublicKey": {
-        "type": "string"
-      }
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "required": [
+    "ocpVersion",
+    "ocpArch",
+    "APIPublishingStrategy",
+    "baseDnsDomain"
+  ],
+  "properties": {
+    "baseDnsDomain": {
+      "type": "string"
+    },
+    "APIPublishingStrategy": {
+      "type": "string"
+    },
+    "ocpArch": {
+      "type": "string"
+    },
+    "ocpVersion": {
+      "type": "string"
     }
   }
+}
