@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
 spec:
   clusterName: {{ .Release.Name }}
-  replicas: {{ .Values.replicas }}
+  replicas: 1
   management:
     autoRepair: false
     upgradeType: InPlace
