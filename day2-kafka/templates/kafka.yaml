@@ -3,6 +3,8 @@ kind: Kafka
 metadata:
   name: my-cluster
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   entityOperator:
     topicOperator: {}
