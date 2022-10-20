@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
 spec:
   release:
-    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-{{ .Values.ocpArch }}
+    image: quay.io/openshift-release-dev/ocp-release:4.11.9-multi-x86_64
   pullSecret:
     name: pullsecret-cluster-{{ .Release.Name }}
   sshKey:
@@ -21,11 +21,11 @@ spec:
       agentNamespace: rw-hs-infra
   infraID: {{ .Release.Name }}
   dns:
-    baseDomain: {{ .Values.baseDnsDomain }}
+    baseDomain: rw.com
   services:
   - service: APIServer
     servicePublishingStrategy:
-      type: {{ .Values.APIPublishingStrategy }}
+      type: LoadBalancer
   - service: OAuthServer
     servicePublishingStrategy:
       type: Route

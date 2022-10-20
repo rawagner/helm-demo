@@ -15,4 +15,4 @@ spec:
       agentLabelSelector:
         matchLabels: {}
   release:
-    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-{{ .Values.ocpArch }}
+    image: quay.io/openshift-release-dev/ocp-release:4.11.9-multi-x86_64
