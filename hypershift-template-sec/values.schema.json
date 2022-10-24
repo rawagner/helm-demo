@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "required": [
+    "sshPublicKey",
+    "pullSecret"
+  ],
+  "properties": {
+    "sshPublicKey": {
+      "type": "string"
+    },
+    "pullSecret": {
+      "type": "string"
+    }
+  }
+}

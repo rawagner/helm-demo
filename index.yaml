@@ -5,7 +5,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.69306886+02:00"
+    created: "2022-10-24T14:40:01.442005476+02:00"
     description: A Helm chart for Kubernetes
     digest: 757a44519c4bc2237b864d0d20e0a550020bf6119904b5b5b51e4f8d40180f46
     name: clusterclaim-template
@@ -16,7 +16,7 @@ entries:
   day2-cm-template:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.693187595+02:00"
+    created: "2022-10-24T14:40:01.442128605+02:00"
     description: A Helm chart for Kubernetes
     digest: 0437fd17e084d4696038dd6a77ce349e06c9f94a26df6cad31b759f92ea3432a
     name: day2-cm-template
@@ -27,7 +27,7 @@ entries:
   day2-kafka-op-template:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.693304287+02:00"
+    created: "2022-10-24T14:40:01.442245424+02:00"
     description: A Helm chart for Kubernetes
     digest: 960d2649f0f1cb07b5fb484721a4a9b80797f7392b4408ecdc6bc8e25814cb16
     name: day2-kafka-op-template
@@ -38,7 +38,7 @@ entries:
   day2-kafka-template:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.693845578+02:00"
+    created: "2022-10-24T14:40:01.442719549+02:00"
     description: A Helm chart for Kubernetes
     digest: bc6ecbae1598421addcdb3f52f74d4bb815f0338e6b143960f1f8c4d1214972b
     name: day2-kafka-template
@@ -48,7 +48,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.69372118+02:00"
+    created: "2022-10-24T14:40:01.442608318+02:00"
     description: A Helm chart for Kubernetes
     digest: 4099cfaa0b76af958cae82d7a2e13d5c22e80d44a3e9d9eed8b528b7b6202b11
     name: day2-kafka-template
@@ -58,7 +58,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.69360477+02:00"
+    created: "2022-10-24T14:40:01.442495419+02:00"
     description: A Helm chart for Kubernetes
     digest: e61c2b5cdfe13502e939055837b084eaa9b339c78f4b41c31f62e7c44719b21f
     name: day2-kafka-template
@@ -68,7 +68,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.693459145+02:00"
+    created: "2022-10-24T14:40:01.442376057+02:00"
     description: A Helm chart for Kubernetes
     digest: 41067bd972e4da0a1b62710c8a6e68af09587ea17f675b8c1d8d580f1e2a78e1
     name: day2-kafka-template
@@ -81,7 +81,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.694059989+02:00"
+    created: "2022-10-24T14:40:01.442871849+02:00"
     description: A Helm chart for Kubernetes
     digest: 19fcd1ce7e4e55433bb1a921643d72d82b73305f020f73c11391514660f28132
     name: hive-template
@@ -94,7 +94,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.69510028+02:00"
+    created: "2022-10-24T14:40:01.443764897+02:00"
     description: A Helm chart for Kubernetes
     digest: a47cf46a2551bbec37fd7973fc8fe4b66e9fe320c564f9de218a942f1969074b
     name: hypershift-template
@@ -106,7 +106,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.694885175+02:00"
+    created: "2022-10-24T14:40:01.443582281+02:00"
     description: A Helm chart for Kubernetes
     digest: a9d577fa977ae8ef38abc6d31ed65bd6135b3d109e3ec3bf6fdc179db95a8892
     name: hypershift-template
@@ -118,7 +118,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.694705308+02:00"
+    created: "2022-10-24T14:40:01.443415609+02:00"
     description: A Helm chart for Kubernetes
     digest: aac5b28e10a386b187bee4d552f2d2d042b9b44d6c3d65535a768f4d0a16cba2
     name: hypershift-template
@@ -130,7 +130,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.694535058+02:00"
+    created: "2022-10-24T14:40:01.443237054+02:00"
     description: A Helm chart for Kubernetes
     digest: 7c2b3e9b1297f7d6d8b65a245361fa1ea422085a98d8930a983e4a940ed91648
     name: hypershift-template
@@ -142,7 +142,7 @@ entries:
       cluster-template: "true"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-20T14:07:18.694328908+02:00"
+    created: "2022-10-24T14:40:01.443041637+02:00"
     description: A Helm chart for Kubernetes
     digest: decf2c4a51e6c9cfc6fd2c68722b5b8b211083360f65fc1b339819f6a4caf15d
     name: hypershift-template
@@ -150,4 +150,17 @@ entries:
     urls:
     - hypershift-template-0.0.1.tgz
     version: 0.0.1
-generated: "2022-10-20T14:07:18.692785783+02:00"
+  hypershift-template-sec:
+  - annotations:
+      cluster-template: "true"
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-24T14:40:01.443910519+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 5d4f7a5396ad31827eb2fd1cbc9ffd8364217dfb34b1b3e7e59cd053febc285f
+    name: hypershift-template-sec
+    type: application
+    urls:
+    - hypershift-template-sec-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-10-24T14:40:01.441744122+02:00"
