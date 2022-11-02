@@ -1,8 +1,0 @@
-apiVersion: hive.openshift.io/v1
-kind: ClusterClaim
-metadata:
-  name: {{ .Release.Name }}
-  namespace: default
-spec:
-  clusterPoolName: awspool-{{ randNumeric 3 }}
-  lifetime: 8h
