@@ -8,6 +8,7 @@ spec:
   containers:
     - name: rosa-installer
       image: 'quay.io/rawagner/rosa-installer:latest'
+      imagePullPolicy: Always
       env:
       - name: CLUSTER_NAME
         value: {{ .Release.Name }}
