@@ -1,0 +1,5 @@
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: sa-{{ .Release.Namespace }}-{{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}

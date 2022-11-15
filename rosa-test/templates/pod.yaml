@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Release.Namespace }}-{{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  serviceAccountName: sa-{{ .Release.Namespace }}-{{ .Release.Name }}
+  containers:
+    - name: rosa-installer
+      image: 'quay.io/rawagner/rosa-installer:latest'
+      env:
+      - name: CLUSTER_NAME
+        value: {{ .Release.Name }}
+      - name: CLUSTER_NAMESPACE
+        value: {{ .Release.Namespace }}
+      - name: ROSA_TOKEN
+        valueFrom:
+          secretKeyRef:
+            name: rosa-templates
+            key: rosaToken
+      - name: AWS_ACCESS_KEY_ID
+        valueFrom:
+          secretKeyRef:
+            name: rosa-templates
+            key: awsAccessKeyID
+      - name: AWS_SECRET_ACCESS_KEY
+        valueFrom:
+          secretKeyRef:
+            name: rosa-templates
+            key: awsSecretAccessKey
+      - name: AWS_REGION
+        value: us-west-2

@@ -3,7 +3,7 @@ entries:
   day2-kafka-template:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-03T15:15:12.577225952+01:00"
+    created: "2022-11-15T13:20:38.69701603+01:00"
     description: A Helm chart for Kubernetes
     digest: bc6ecbae1598421addcdb3f52f74d4bb815f0338e6b143960f1f8c4d1214972b
     name: day2-kafka-template
@@ -14,7 +14,7 @@ entries:
   devconf-template:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-03T15:15:12.577712767+01:00"
+    created: "2022-11-15T13:20:38.697454341+01:00"
     description: Hypershift cluster template
     digest: a86e4f489ad62b7908e0627736f5142e32406c389e50f0007b207198facbf443
     name: devconf-template
@@ -24,7 +24,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-03T15:15:12.577554319+01:00"
+    created: "2022-11-15T13:20:38.69731179+01:00"
     description: Hypershift cluster template
     digest: c0b39ede0058851deb43930c8458a41c41bfbbb2dc9875c9116ac01efb979ad1
     name: devconf-template
@@ -34,7 +34,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-03T15:15:12.577408762+01:00"
+    created: "2022-11-15T13:20:38.697172222+01:00"
     description: Hypershift cluster template
     digest: 118f9db697b4059875b9c440487e0e9ec241acf990ec883d28b9050c38faa96a
     name: devconf-template
@@ -42,4 +42,15 @@ entries:
     urls:
     - devconf-template-0.0.1.tgz
     version: 0.0.1
-generated: "2022-11-03T15:15:12.576858318+01:00"
+  rosa-test:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-11-15T13:20:38.697607772+01:00"
+    description: ROSA template
+    digest: e4dbf58fc3e5f1b6fe0b8be60d7bdf0fdd6b8402d2b665554997895eea7aadad
+    name: rosa-test
+    type: application
+    urls:
+    - rosa-test-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-11-15T13:20:38.696758509+01:00"

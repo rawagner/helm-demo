@@ -1,0 +1,23 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: cr-{{ .Release.Namespace }}-{{ .Release.Name }}
+rules:
+  - verbs:
+      - '*'
+    apiGroups:
+      - ''
+    resources:
+      - secrets
+  - verbs:
+      - '*'
+    apiGroups:
+      - clustertemplate.openshift.io
+    resources:
+      - clustertemplateinstances
+  - verbs:
+      - '*'
+    apiGroups:
+      - argoproj.io
+    resources:
+      - applications

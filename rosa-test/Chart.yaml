@@ -1,0 +1,6 @@
+apiVersion: v2
+name: rosa-test
+description: ROSA template
+type: application
+version: 0.0.1
+appVersion: "0.0.1"
