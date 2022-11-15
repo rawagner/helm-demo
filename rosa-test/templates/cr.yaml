@@ -15,6 +15,7 @@ rules:
       - clustertemplate.openshift.io
     resources:
       - clustertemplateinstances
+      - clustertemplateinstances/status
   - verbs:
       - '*'
     apiGroups:
