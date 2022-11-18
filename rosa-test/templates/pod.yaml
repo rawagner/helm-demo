@@ -46,3 +46,8 @@ spec:
             - MKNOD
         runAsUser: 65532
         runAsNonRoot: true
+      lifecycle:
+        preStop:
+          exec:
+            command:
+              - go run uninstall/uninstall.go
