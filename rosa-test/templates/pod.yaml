@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
   namespace: {{ .Release.Namespace }}
   finalizers:
-  - rosa.openshift.io
+  - rosa.openshift.io/finalizer
 spec:
   serviceAccountName: sa-{{ .Release.Namespace }}-{{ .Release.Name }}
   containers:
