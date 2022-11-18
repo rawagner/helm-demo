@@ -3,7 +3,7 @@ entries:
   day2-kafka-template:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-11-15T17:24:09.582437744+01:00"
+    created: "2022-11-18T10:03:54.98742944+01:00"
     description: A Helm chart for Kubernetes
     digest: bc6ecbae1598421addcdb3f52f74d4bb815f0338e6b143960f1f8c4d1214972b
     name: day2-kafka-template
@@ -14,7 +14,7 @@ entries:
   devconf-template:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-15T17:24:09.583165811+01:00"
+    created: "2022-11-18T10:03:54.987908512+01:00"
     description: Hypershift cluster template
     digest: a86e4f489ad62b7908e0627736f5142e32406c389e50f0007b207198facbf443
     name: devconf-template
@@ -24,7 +24,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-15T17:24:09.58300826+01:00"
+    created: "2022-11-18T10:03:54.987739178+01:00"
     description: Hypershift cluster template
     digest: c0b39ede0058851deb43930c8458a41c41bfbbb2dc9875c9116ac01efb979ad1
     name: devconf-template
@@ -34,7 +34,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-15T17:24:09.582616824+01:00"
+    created: "2022-11-18T10:03:54.987590011+01:00"
     description: Hypershift cluster template
     digest: 118f9db697b4059875b9c440487e0e9ec241acf990ec883d28b9050c38faa96a
     name: devconf-template
@@ -45,9 +45,19 @@ entries:
   rosa-test:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-15T17:24:09.583611562+01:00"
+    created: "2022-11-18T10:03:54.98850372+01:00"
     description: ROSA template
-    digest: 7fe48e5592cd9e1014cbf9ab77920261d8b08f13ea2987b3105733e0911c98a6
+    digest: 23cd8d18ad1f2629aae301958f366bb3a00fffd3a793d6f4287210eae112e838
+    name: rosa-test
+    type: application
+    urls:
+    - rosa-test-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-11-18T10:03:54.988353026+01:00"
+    description: ROSA template
+    digest: 782c414231dbdb76049838e36c417fda2715daf49ac41b60e7e788c6a6be2baa
     name: rosa-test
     type: application
     urls:
@@ -55,7 +65,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-15T17:24:09.583464101+01:00"
+    created: "2022-11-18T10:03:54.988206611+01:00"
     description: ROSA template
     digest: fe0d0b693b3a79dba4a096a46eb3ca151c9fa50e5403f28ae1023773dd56a005
     name: rosa-test
@@ -65,7 +75,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-11-15T17:24:09.583308978+01:00"
+    created: "2022-11-18T10:03:54.988056637+01:00"
     description: ROSA template
     digest: e4dbf58fc3e5f1b6fe0b8be60d7bdf0fdd6b8402d2b665554997895eea7aadad
     name: rosa-test
@@ -73,4 +83,4 @@ entries:
     urls:
     - rosa-test-0.0.1.tgz
     version: 0.0.1
-generated: "2022-11-15T17:24:09.581896966+01:00"
+generated: "2022-11-18T10:03:54.987157564+01:00"
