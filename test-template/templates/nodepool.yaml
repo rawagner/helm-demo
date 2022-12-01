@@ -14,4 +14,4 @@ spec:
       agentLabelSelector:
         matchLabels: {}
   release:
-    image: quay.io/openshift-release-dev/ocp-release:4.11.9-multi-x86_64
+    image: quay.io/openshift-release-dev/ocp-release:4.11.9-x86_64
