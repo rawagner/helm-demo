@@ -1,2 +1,2 @@
 #API publishing strategy
-publishingStrategy: Route
+publishingStrategy: LoadBalancer
