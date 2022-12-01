@@ -1,10 +1,10 @@
 apiVersion: hypershift.openshift.io/v1alpha1
-kind: HostedCluster1
+kind: HostedCluster
 metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
 spec:
   release:
-    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-x86_64
+    image: quay.io/openshift-release-dev/ocp-release:4.11.9-x86_64
   pullSecret:
     name: pullsecret-cluster
   sshKey:
@@ -24,7 +24,7 @@ spec:
   services:
   - service: APIServer
     servicePublishingStrategy:
-      type: LoadBalancer
+      type: {{ .Values.publishingStrategy }} 
   - service: OAuthServer
     servicePublishingStrategy:
       type: Route
