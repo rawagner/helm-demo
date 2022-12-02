@@ -1,2 +1,5 @@
 #API publishing strategy
 publishingStrategy: LoadBalancer
+
+#OCP version to deploy
+ocpVersion: 4.11.9
