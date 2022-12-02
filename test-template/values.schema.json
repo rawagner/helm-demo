@@ -2,10 +2,14 @@
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "required": [
-    "publishingStrategy"
+    "publishingStrategy",
+    "ocpVersion"
   ],
   "properties": {
     "publishingStrategy": {
+      "type": "string"
+    },
+    "ocpVersion": {
       "type": "string"
     }
   }
