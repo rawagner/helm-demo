@@ -15,7 +15,7 @@ spec:
     machineCIDR: 192.168.122.0/24
     networkType: OVNKubernetes
   platform:
-    type: Kubevirt
+    type: KubeVirt
   infraID: {{ .Release.Namespace }}-{{ .Release.Name }}
   dns:
     baseDomain: {{ .Values.baseDnsDomain }}
