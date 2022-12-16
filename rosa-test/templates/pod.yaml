@@ -19,16 +19,6 @@ spec:
           secretKeyRef:
             name: rosa-templates
             key: rosaToken
-      - name: AWS_ACCESS_KEY_ID
-        valueFrom:
-          secretKeyRef:
-            name: rosa-templates
-            key: awsAccessKeyID
-      - name: AWS_SECRET_ACCESS_KEY
-        valueFrom:
-          secretKeyRef:
-            name: rosa-templates
-            key: awsSecretAccessKey
       - name: AWS_REGION
         value: us-west-2
       - name: POD_NAME
