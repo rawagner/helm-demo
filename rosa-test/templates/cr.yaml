@@ -30,3 +30,4 @@ rules:
       - cluster.open-cluster-management.io
     resources:
       - managedclusters
+      - managedclusters/accept
