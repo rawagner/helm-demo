@@ -30,9 +30,11 @@ rules:
       - cluster.open-cluster-management.io
     resources:
       - managedclusters
+      - managedclustersets/join
   - verbs:
       - '*'
     apiGroups:
       - register.open-cluster-management.io
     resources:
       - managedclusters/accept
+
