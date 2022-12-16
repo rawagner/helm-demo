@@ -10,6 +10,7 @@ rules:
     resources:
       - secrets
       - pods
+      - namespaces
   - verbs:
       - '*'
     apiGroups:
@@ -23,3 +24,9 @@ rules:
       - argoproj.io
     resources:
       - applications
+  - verbs:
+      - '*'
+    apiGroups:
+      - cluster.open-cluster-management.io
+    resources:
+      - managedclusters
