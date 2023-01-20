@@ -13,6 +13,6 @@ spec:
     agent:
       agentLabelSelector:
         matchLabels:
-          flavor: small
+          agentclassification.agent-install.openshift.io/flavor: small
   release:
     image: quay.io/openshift-release-dev/ocp-release:4.11.9-multi-x86_64
