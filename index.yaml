@@ -3,7 +3,7 @@ entries:
   day2-kafka-template:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-09T10:43:42.75935684+01:00"
+    created: "2023-02-22T15:39:07.542469028+01:00"
     description: A Helm chart for Kubernetes
     digest: f72bf00fd8320d359d8dfd63d67380a6b614f63cf170abf5c80a10d775b628e7
     name: day2-kafka-template
@@ -13,7 +13,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-09T10:43:42.759218888+01:00"
+    created: "2023-02-22T15:39:07.542325353+01:00"
     description: A Helm chart for Kubernetes
     digest: ca48af6cfc9be4f4f54f3465f75155341a27d78b7f0491e484a213e7bab82350
     name: day2-kafka-template
@@ -23,7 +23,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-09T10:43:42.759048573+01:00"
+    created: "2023-02-22T15:39:07.542180021+01:00"
     description: A Helm chart for Kubernetes
     digest: bc6ecbae1598421addcdb3f52f74d4bb815f0338e6b143960f1f8c4d1214972b
     name: day2-kafka-template
@@ -34,7 +34,7 @@ entries:
   devconf-template:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.759818989+01:00"
+    created: "2023-02-22T15:39:07.543531276+01:00"
     description: Hypershift cluster template
     digest: a86e4f489ad62b7908e0627736f5142e32406c389e50f0007b207198facbf443
     name: devconf-template
@@ -44,7 +44,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.759661159+01:00"
+    created: "2023-02-22T15:39:07.543384175+01:00"
     description: Hypershift cluster template
     digest: c0b39ede0058851deb43930c8458a41c41bfbbb2dc9875c9116ac01efb979ad1
     name: devconf-template
@@ -54,7 +54,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.759512651+01:00"
+    created: "2023-02-22T15:39:07.543226214+01:00"
     description: Hypershift cluster template
     digest: 118f9db697b4059875b9c440487e0e9ec241acf990ec883d28b9050c38faa96a
     name: devconf-template
@@ -62,11 +62,22 @@ entries:
     urls:
     - devconf-template-0.0.1.tgz
     version: 0.0.1
+  hive-template:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-02-22T15:39:07.543666095+01:00"
+    description: Hive cluster template
+    digest: ed1cd66e9dc031d518ed5be3190ee75d3d756460fac512864a40c041b4f1fddc
+    name: hive-template
+    type: application
+    urls:
+    - hive-template-0.0.1.tgz
+    version: 0.0.1
   hypershift-2-nodepool:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-02-09T10:43:42.760211388+01:00"
+    created: "2023-02-22T15:39:07.544048831+01:00"
     description: A Helm chart for Kubernetes
     digest: 51be2277db9961870c83209245b6c31822f6f80753618e47166603a6e30bfbd3
     name: hypershift-2-nodepool
@@ -77,7 +88,7 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-02-09T10:43:42.76001016+01:00"
+    created: "2023-02-22T15:39:07.543853193+01:00"
     description: A Helm chart for Kubernetes
     digest: 2e17c86fac8d113ed9d91aa1b7649a574c71776923cc2cc9837550fa66130349
     name: hypershift-2-nodepool
@@ -89,7 +100,7 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-02-09T10:43:42.760399753+01:00"
+    created: "2023-02-22T15:39:07.544227584+01:00"
     description: A Helm chart for Kubernetes
     digest: 6c2370cfc7f320702327626cd8f7258ce60355fc414833f4efe6ab261c0d733d
     name: hypershift-ai-medium
@@ -101,7 +112,7 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-02-09T10:43:42.76058461+01:00"
+    created: "2023-02-22T15:39:07.544410598+01:00"
     description: A Helm chart for Kubernetes
     digest: b62c0825b350214d47320b936f28d29c6904854ecd1da35c0fefef789a8eb017
     name: hypershift-ai-small
@@ -113,7 +124,7 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-02-09T10:43:42.760955459+01:00"
+    created: "2023-02-22T15:39:07.544773434+01:00"
     description: A Helm chart for Kubernetes
     digest: ec463d7f62229433ad15679dba825cd7920f85f469ce5bab595d8453cc85b14d
     name: hypershift-kubevirt-template
@@ -124,7 +135,7 @@ entries:
   - annotations:
       cluster-template: "true"
     apiVersion: v2
-    created: "2023-02-09T10:43:42.760771694+01:00"
+    created: "2023-02-22T15:39:07.544581177+01:00"
     description: A Helm chart for Kubernetes
     digest: 186dff329d4a13000f24bf808c5ae2405f7ecb164b0cbd8ca77b4a83dd9eebe3
     name: hypershift-kubevirt-template
@@ -135,7 +146,7 @@ entries:
   rosa-test:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.762975129+01:00"
+    created: "2023-02-22T15:39:07.546123351+01:00"
     description: ROSA template
     digest: 238470c0191537774389b3213b0093cdb5a120d2abc4847616002b67decea655
     name: rosa-test
@@ -145,7 +156,7 @@ entries:
     version: 0.0.17
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.762836595+01:00"
+    created: "2023-02-22T15:39:07.545974681+01:00"
     description: ROSA template
     digest: 407a47c6ebacd24e5eeaedd5aec10fad1498c65227efc08c464979069df852f5
     name: rosa-test
@@ -155,7 +166,7 @@ entries:
     version: 0.0.16
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.762691893+01:00"
+    created: "2023-02-22T15:39:07.545831033+01:00"
     description: ROSA template
     digest: 79b17267dc332e42ce687217dd08b8d168c112f0ab76d9048f7e0e4881c88fa9
     name: rosa-test
@@ -165,7 +176,7 @@ entries:
     version: 0.0.15
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.762551606+01:00"
+    created: "2023-02-22T15:39:07.545682451+01:00"
     description: ROSA template
     digest: ab3eaa30fedfbb5915dca91b735fd38c084b38be7441aa7d50b47ced7446e87b
     name: rosa-test
@@ -175,7 +186,7 @@ entries:
     version: 0.0.14
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.762411237+01:00"
+    created: "2023-02-22T15:39:07.545524135+01:00"
     description: ROSA template
     digest: b7a5d29ea3d097a4b8f1667a8e733f108e8c0717c89f66f684b7f64f3865facf
     name: rosa-test
@@ -185,7 +196,7 @@ entries:
     version: 0.0.13
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.762270458+01:00"
+    created: "2023-02-22T15:39:07.545385581+01:00"
     description: ROSA template
     digest: 05fe2d69885f86fda2c1fce9ab78e11c753df2a86eafcf8dbe208959b9fbf6c6
     name: rosa-test
@@ -195,7 +206,7 @@ entries:
     version: 0.0.12
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.76212842+01:00"
+    created: "2023-02-22T15:39:07.545241088+01:00"
     description: ROSA template
     digest: 92e5847c24775f8ed6d6a8f4754d8b18b05da313104f77ca433a542f4aa49013
     name: rosa-test
@@ -205,7 +216,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.76194774+01:00"
+    created: "2023-02-22T15:39:07.545080213+01:00"
     description: ROSA template
     digest: 49131f7941bf02e70042b85ad47d6dae504447f149f897a99247a7d3b3f500ae
     name: rosa-test
@@ -215,7 +226,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.764186551+01:00"
+    created: "2023-02-22T15:39:07.547908972+01:00"
     description: ROSA template
     digest: 7cbacc78cd5e1736675fac77cb1838006b9e6c2c814e33b10e1667086b762bd6
     name: rosa-test
@@ -225,7 +236,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.76401095+01:00"
+    created: "2023-02-22T15:39:07.547721128+01:00"
     description: ROSA template
     digest: 2cac012978c9d07016b88a0c8b7d4d042cd1985b5ba07270b22f16a48c64e3e0
     name: rosa-test
@@ -235,7 +246,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.763852969+01:00"
+    created: "2023-02-22T15:39:07.547550005+01:00"
     description: ROSA template
     digest: f8a02906b11fe2e51db74262210cdbfc8d7492eb9b0c831866de6189dd7bba76
     name: rosa-test
@@ -245,7 +256,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.763703931+01:00"
+    created: "2023-02-22T15:39:07.54731592+01:00"
     description: ROSA template
     digest: 864f982fdfa4776c86adad913a236391b3412cbb101c04712724118d7ebcb4ef
     name: rosa-test
@@ -255,7 +266,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.763546599+01:00"
+    created: "2023-02-22T15:39:07.546901966+01:00"
     description: ROSA template
     digest: 09f41e178602556afa14d0d51083ddd7b2f27f72b2249aacf64835f4cfc2de95
     name: rosa-test
@@ -265,7 +276,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.763397578+01:00"
+    created: "2023-02-22T15:39:07.546580186+01:00"
     description: ROSA template
     digest: 23cd8d18ad1f2629aae301958f366bb3a00fffd3a793d6f4287210eae112e838
     name: rosa-test
@@ -275,7 +286,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.763258384+01:00"
+    created: "2023-02-22T15:39:07.546425013+01:00"
     description: ROSA template
     digest: 782c414231dbdb76049838e36c417fda2715daf49ac41b60e7e788c6a6be2baa
     name: rosa-test
@@ -285,7 +296,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.763118908+01:00"
+    created: "2023-02-22T15:39:07.546270932+01:00"
     description: ROSA template
     digest: fe0d0b693b3a79dba4a096a46eb3ca151c9fa50e5403f28ae1023773dd56a005
     name: rosa-test
@@ -295,7 +306,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.761689207+01:00"
+    created: "2023-02-22T15:39:07.544923851+01:00"
     description: ROSA template
     digest: e4dbf58fc3e5f1b6fe0b8be60d7bdf0fdd6b8402d2b665554997895eea7aadad
     name: rosa-test
@@ -306,7 +317,7 @@ entries:
   test-template:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.765161148+01:00"
+    created: "2023-02-22T15:39:07.548838147+01:00"
     description: Hypershift cluster template
     digest: c771cbbccd70682b9f9edd7e05ceb07c7ac23f29b5f0ea9e4e201eb70db070f4
     name: test-template
@@ -316,7 +327,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.764971044+01:00"
+    created: "2023-02-22T15:39:07.548686645+01:00"
     description: Hypershift cluster template
     digest: 83d02f67040a9d5d881371d17cd77ef67013890baeebcf755f127ad1d044a375
     name: test-template
@@ -326,7 +337,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.764800799+01:00"
+    created: "2023-02-22T15:39:07.548529899+01:00"
     description: Hypershift cluster template
     digest: 18b2706d848ba80c8ec2a204500e8bd0004555d1a1bfce431a327b87538650f2
     name: test-template
@@ -336,7 +347,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.764646398+01:00"
+    created: "2023-02-22T15:39:07.548369332+01:00"
     description: Hypershift cluster template
     digest: 22c458a130ed8c9d35fc45e72c57032df53bb63661a303bc331529681cb95f31
     name: test-template
@@ -346,7 +357,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.764498264+01:00"
+    created: "2023-02-22T15:39:07.548217318+01:00"
     description: Hypershift cluster template
     digest: 0576a5020075f80f57d4cb52a07437429554725d471b680a185f4115c53e3675
     name: test-template
@@ -356,7 +367,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-02-09T10:43:42.764348543+01:00"
+    created: "2023-02-22T15:39:07.548063219+01:00"
     description: Hypershift cluster template
     digest: 185384603e0b027ad74e8ab443d60bce5aa84a50cd35061319b996e9f7a289d6
     name: test-template
@@ -364,4 +375,4 @@ entries:
     urls:
     - test-template-0.0.1.tgz
     version: 0.0.1
-generated: "2023-02-09T10:43:42.758780871+01:00"
+generated: "2023-02-22T15:39:07.541909224+01:00"
