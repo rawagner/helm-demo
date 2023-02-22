@@ -3,11 +3,11 @@ kind: AgentClusterInstall
 metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
 spec:
+  apiVIP: 192.168.122.1
+  ingressVIP: 192.168.122.2
   clusterDeploymentRef:
     name: {{ .Release.Namespace }}-{{ .Release.Name }}
-  holdInstallation: true
   provisionRequirements:
-    workerAgents: 2
     controlPlaneAgents: 3
   imageSetRef:
     name: 'img4.11.28-x86-64-appsub'
