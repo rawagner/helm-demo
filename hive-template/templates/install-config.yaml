@@ -44,7 +44,7 @@ stringData:
       - 172.30.0.0/16
     platform:
       aws:
-        region: us-east-1
+        region: eu-central-1
     pullSecret: "" # skip, hive will inject based on it's secrets
     sshKey: |-
         ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7VQWfABHmZno6O+hHAb0+493cEjK+S7Lt7kn7iq5pjFdvI/jvXhkO8qmz9D8eLCmHQGfqm+9xNMivyCtsNJWZ246Ak5RaMKf6VknQZipBmOd2k1k4Rsjzv/cbCv4SktB14RSgWbFEymOFQsMfNoGcyxO/0p433PFdD+x0qaf//UAM2bUk4hkIvheKMrs7FeCM5wbWWyPNmrFtMbh289DN6DqHGPyZ8Tk31y15ooBDPmT+R+1vSJT/xmc5hcmfwpWBD+U7Y6NVFYpg+oncaz1wlaaOU4bnzSzYRznb4hwAhDiZj4hD33oKWwY3XJnddnxo61/KyMX6jOXKFIS31b1/phrolK9+rNCAkSg5jg3PXfESYQmVSpIRIg/YaHNB3XIWBCB7PS12j3L612DUkmHvlYXsCG34hrxzhNgdafgXeln6qODmNZiu3ZHA2UY9HXEjUcjzJIRJRUnTxxilitRAYYVVjrBaBKbxJrqOH+RQK1T1qyMwlWHNSFFMatvtSRs= rawagner@fedora

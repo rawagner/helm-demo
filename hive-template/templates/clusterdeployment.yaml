@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
   labels:
     cloud: 'AWS'
-    region: 'us-east-1'
+    region: 'eu-central-1'
     vendor: OpenShift
 spec:
   baseDomain: rawagner-op.link
@@ -18,7 +18,7 @@ spec:
       # has to exist on cluster
       credentialsSecretRef:
         name: aws-creds
-      region: us-east-1
+      region: eu-central-1
   provisioning:
     installConfigSecretRef:
       name: {{ .Release.Namespace }}-{{ .Release.Name }}-config
