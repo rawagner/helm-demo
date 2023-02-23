@@ -1,19 +1,32 @@
 apiVersion: hive.openshift.io/v1
 kind: ClusterDeployment
 metadata:
-  annotations:
-    agentBareMetal-agentSelector/autoSelect: "true"
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
+  labels:
+    cloud: 'AWS'
+    region: 'us-east-1'
+    vendor: OpenShift
 spec:
-  baseDomain: rw.com
-  clusterInstallRef:
-    group: extensions.hive.openshift.io
-    kind: AgentClusterInstall
-    name: {{ .Release.Namespace }}-{{ .Release.Name }}
-    version: v1beta1
+  baseDomain: rawagner-op.link
   clusterName: {{ .Release.Namespace }}-{{ .Release.Name }}
+  controlPlaneConfig:
+    servingCertificates: {}
+  installAttemptsLimit: 1
+  installed: false
   platform:
-    agentBareMetal:
-      agentSelector: {}
+    aws:
+      # has to exist on cluster
+      credentialsSecretRef:
+        name: aws-creds
+      region: us-east-1
+  provisioning:
+    installConfigSecretRef:
+      name: {{ .Release.Namespace }}-{{ .Release.Name }}-config
+    # has to exist on cluster
+    sshPrivateKeySecretRef:
+      name: aws-ssh-private-key
+    imageSetRef:
+      name: img4.11.28-x86-64-appsub
+  # has to exist on cluster
   pullSecretRef:
     name: pullsecret-cluster

@@ -1,0 +1,16 @@
+apiVersion: hive.openshift.io/v1
+kind: MachinePool
+metadata:
+  name: {{ .Release.Namespace }}-{{ .Release.Name }}
+spec:
+  clusterDeploymentRef:
+    name: {{ .Release.Namespace }}-{{ .Release.Name }}
+  name: worker
+  platform:
+    aws:
+      rootVolume:
+        iops: 2000
+        size: 100
+        type: io1
+      type: m5.xlarge
+  replicas: 0
