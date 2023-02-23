@@ -1,7 +1,7 @@
 apiVersion: hive.openshift.io/v1
 kind: MachinePool
 metadata:
-  name: {{ .Release.Namespace }}-{{ .Release.Name }}
+  name: {{ .Release.Namespace }}-{{ .Release.Name }}-mp
 spec:
   clusterDeploymentRef:
     name: {{ .Release.Namespace }}-{{ .Release.Name }}
