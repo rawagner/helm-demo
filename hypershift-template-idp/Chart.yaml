@@ -1,0 +1,6 @@
+apiVersion: v2
+name: hypershift-template-idp
+description: Hypershift cluster template with IDP
+type: application
+version: 0.0.1
+appVersion: "0.0.1"
