@@ -21,28 +21,6 @@ spec:
   infraID: {{ .Release.Name }}
   dns:
     baseDomain: rw.com
-  configuration:
-    oauth:
-      identityProviders:
-        - mappingMethod: claim
-          name: keycloak
-          openID:
-            ca:
-              name: keycloak-ca
-            claims:
-              email:
-                - email
-              name:
-                - name
-              preferredUsername:
-                - preferred_username
-            clientID: ocp
-            clientSecret:
-              name: keycloak-secret
-            extraScopes: []
-            issuer: >-
-              https://keycloak-default.apps.rw-east.c14h.p1.openshiftapps.com/realms/master
-          type: OpenID
   services:
   - service: APIServer
     servicePublishingStrategy:
