@@ -3,6 +3,28 @@ kind: HostedCluster
 metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
 spec:
+  configuration:
+    oauth:
+      identityProviders:
+        - mappingMethod: claim
+          name: keycloak
+          openID:
+            ca:
+              name: keycloak-ca
+            claims:
+              email:
+                - email
+              name:
+                - name
+              preferredUsername:
+                - preferred_username
+            clientID: ocp
+            clientSecret:
+              name: keycloak-secret
+            extraScopes: []
+            issuer: >-
+              https://keycloak-default.apps.rw-east.c14h.p1.openshiftapps.com/realms/ocp
+          type: OpenID
   release:
     image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-x86_64
   pullSecret:
