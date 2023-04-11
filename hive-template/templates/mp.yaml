@@ -13,4 +13,4 @@ spec:
         size: 100
         type: io1
       type: m5.xlarge
-  replicas: 0
+  replicas: 2
