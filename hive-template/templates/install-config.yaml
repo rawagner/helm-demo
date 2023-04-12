@@ -10,10 +10,9 @@ stringData:
       name: {{ .Release.Namespace }}-{{ .Release.Name }}
     baseDomain: rawagner-op.link
     controlPlane:
-      architecture: amd64
       hyperthreading: Enabled
       name: master
-      replicas: 3
+      replicas: 1
       platform:
         aws:
           rootVolume:
@@ -23,9 +22,8 @@ stringData:
           type: m5.2xlarge
     compute:
     - hyperthreading: Enabled
-      architecture: amd64
       name: 'worker'
-      replicas: 2
+      replicas: 0
       platform:
         aws:
           rootVolume:
@@ -34,7 +32,7 @@ stringData:
             type: io1
           type: m5.xlarge
     networking:
-      networkType: OpenShiftSDN
+      networkType: OVNKubernetes
       clusterNetwork:
       - cidr: 10.128.0.0/14
         hostPrefix: 23
