@@ -7,7 +7,7 @@
     "properties": {
       "region": {
         "type": "string",
-        "enum": ["us-central-1", "eu-central-1", "ap-south-1"]
+        "enum": ["sa-east-1", "ca-central-1", "eu-central-1", "ap-south-1"]
       }
     }
   }
