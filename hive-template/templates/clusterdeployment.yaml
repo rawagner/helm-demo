@@ -12,7 +12,6 @@ spec:
   controlPlaneConfig:
     servingCertificates: {}
   installAttemptsLimit: 1
-  installed: false
   platform:
     aws:
       # has to exist on cluster
