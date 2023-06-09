@@ -11,7 +11,6 @@ spec:
   platform:
     type: Agent
     agent:
-      agentLabelSelector:
-        matchLabels: {}
+      agentLabelSelector: {}
   release:
     image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-x86_64
