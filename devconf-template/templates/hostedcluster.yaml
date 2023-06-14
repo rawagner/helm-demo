@@ -1,4 +1,4 @@
-apiVersion: hypershift.openshift.io/v1alpha1
+apiVersion: hypershift.openshift.io/v1beta1
 kind: HostedCluster
 metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
@@ -10,17 +10,20 @@ spec:
   sshKey:
     name: sshkey-cluster
   networking:
-    podCIDR: 10.132.0.0/14
-    serviceCIDR: 172.31.0.0/16
-    machineCIDR: 192.168.122.0/24
-    networkType: OpenShiftSDN
+    clusterNetwork:
+      - cidr: 10.132.0.0/14
+    machineNetwork:
+      - cidr: 192.168.122.0/24
+    networkType: OVNKubernetes
+    serviceNetwork:
+      - cidr: 172.31.0.0/16
   platform:
     type: Agent
     agent:
-      agentNamespace: devconf-infra
+      agentNamespace: {{ .Values.agentNamespace }}
   infraID: {{ .Release.Name }}
   dns:
-    baseDomain: rw.com
+    baseDomain: {{ .Values.baseDnsDomain }}
   services:
   - service: APIServer
     servicePublishingStrategy:

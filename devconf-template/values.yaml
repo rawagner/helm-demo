@@ -1,2 +1,4 @@
 #OCP version to deploy
-ocpVersion: 4.10.33
+ocpVersion: 4.12.21
+agentNamespace: devconf-infra
+baseDnsDomain: rw.com
