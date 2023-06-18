@@ -2,17 +2,9 @@
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "required": [
-    "ocpVersion",
-    "agentNamespace",
-    "baseDnsDomain"
+    "ocpVersion"
   ],
   "properties": {
-    "ocpVersion": {
-      "type": "string"
-    },
-    "agentNamespace": {
-      "type": "string"
-    },
     "baseDnsDomain": {
       "type": "string"
     }
