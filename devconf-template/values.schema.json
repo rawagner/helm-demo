@@ -7,6 +7,9 @@
   "properties": {
     "baseDnsDomain": {
       "type": "string"
+    },
+    "ocpVersion": {
+      "type": "string"
     }
   }
 }
