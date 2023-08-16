@@ -1,0 +1,40 @@
+apiVersion: hypershift.openshift.io/v1beta1
+kind: HostedCluster
+metadata:
+  name: {{ .Release.Namespace }}-{{ .Release.Name }}
+spec:
+  release:
+    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-x86_64
+  pullSecret:
+    name: pullsecret-cluster
+  sshKey:
+    name: sshkey-cluster
+  networking:
+    clusterNetwork:
+      - cidr: 10.132.0.0/14
+    serviceNetwork:
+      - cidr: 172.31.0.0/16
+    networkType: OVNKubernetes
+  platform:
+    type: KubeVirt
+    kubevirt:
+      baseDomainPassthrough: true
+  infraID: {{ .Release.Namespace }}-{{ .Release.Name }}
+  dns:
+    baseDomain: apps.cnv2.engineering.redhat.com
+  services:
+  - service: APIServer
+    servicePublishingStrategy:
+      type: LoadBalancer
+  - service: OAuthServer
+    servicePublishingStrategy:
+      type: Route
+  - service: OIDC
+    servicePublishingStrategy:
+      type: Route
+  - service: Konnectivity
+    servicePublishingStrategy:
+      type: Route
+  - service: Ignition
+    servicePublishingStrategy:
+      type: Route
