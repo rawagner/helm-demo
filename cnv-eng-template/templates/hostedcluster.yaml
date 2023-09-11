@@ -19,6 +19,11 @@ spec:
     type: KubeVirt
     kubevirt:
       baseDomainPassthrough: true
+      credentials:
+        infraNamespace: scaletest
+        infraKubeConfigSecret:
+          key: kubeconfig
+          name: external-kubeconfig
   infraID: {{ .Release.Namespace }}-{{ .Release.Name }}
   dns:
     baseDomain: apps.cnv2.engineering.redhat.com
