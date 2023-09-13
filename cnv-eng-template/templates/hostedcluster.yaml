@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
 spec:
   release:
-    image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-x86_64
+    image: quay.io/openshift-release-dev/ocp-release:4.13-x86_64
   pullSecret:
     name: pullsecret-cluster
   sshKey:
@@ -26,7 +26,7 @@ spec:
           name: external-kubeconfig
   infraID: {{ .Release.Namespace }}-{{ .Release.Name }}
   dns:
-    baseDomain: apps.cnv2.engineering.redhat.com
+    baseDomain: ''
   services:
   - service: APIServer
     servicePublishingStrategy:
