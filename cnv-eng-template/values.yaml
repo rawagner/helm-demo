@@ -3,4 +3,4 @@
 # Declare variables to be passed into your templates.
 
 #An OCP version to deploy
-ocpVersion: 4.13.9
+ocpVersion: 4.14.0-rc.7
