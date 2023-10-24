@@ -2,6 +2,8 @@ apiVersion: hypershift.openshift.io/v1beta1
 kind: HostedCluster
 metadata:
   name: {{ .Release.Namespace }}-{{ .Release.Name }}
+  annotations:
+    hypershift.openshift.io/allow-unsupported-kubevirt-rhcos-variants: 'true'
 spec:
   release:
     image: quay.io/openshift-release-dev/ocp-release:{{ .Values.ocpVersion }}-x86_64
@@ -26,7 +28,7 @@ spec:
           name: external-kubeconfig
   infraID: {{ .Release.Namespace }}-{{ .Release.Name }}
   dns:
-    baseDomain: ''
+    baseDomain: apps.cnv2.engineering.redhat.com
   services:
   - service: APIServer
     servicePublishingStrategy:
