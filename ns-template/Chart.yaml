@@ -1,0 +1,7 @@
+apiVersion: v2
+name: ns-template
+description: A Helm chart which installs namespace
+annotations:
+  cluster-template: true
+type: application
+version: 0.0.1
