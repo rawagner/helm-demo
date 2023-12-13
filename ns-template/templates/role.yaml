@@ -11,6 +11,13 @@ rules:
     resources:
       - pods
       - configmaps
+      - secrets
+  - verbs:
+      - '*'
+    apiGroups:
+      - 'route.openshift.io'
+    resources:
+      - routes
   - verbs:
       - get
       - list
