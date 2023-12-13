@@ -1,7 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: day2-{{ .Release.Name }}                                                                                                                                                                                                                                                   
+  name: day2-{{ .Release.Name }}
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"                                                                                                                                                                                                                                                   
 spec:
   destination:
     server: https://kubernetes.default.svc
