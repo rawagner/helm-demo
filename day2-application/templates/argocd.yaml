@@ -2,3 +2,45 @@ apiVersion: argoproj.io/v1beta1
 kind: ArgoCD
 metadata:
   name: example
+spec:
+  server:
+    autoscale:
+      enabled: false
+    grpc:
+      ingress:
+        enabled: false
+    ingress:
+      enabled: false
+    route:
+      enabled: false
+    service:
+      type: ''
+  grafana:
+    enabled: false
+    ingress:
+      enabled: false
+    route:
+      enabled: false
+  monitoring:
+    enabled: false
+  notifications:
+    enabled: false
+  prometheus:
+    enabled: false
+    ingress:
+      enabled: false
+    route:
+      enabled: false
+  initialSSHKnownHosts: {}
+  rbac: {}
+  extraConfig:
+    timeout.reconciliation: 15s
+  repo: {}
+  ha:
+    enabled: false
+  tls:
+    ca: {}
+  redis: {}
+  controller:
+    processors: {}
+    sharding: {}
