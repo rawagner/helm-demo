@@ -44,3 +44,6 @@ spec:
   controller:
     processors: {}
     sharding: {}
+    env:
+      - name: ARGOCD_RECONCILIATION_TIMEOUT
+        value: 15s
