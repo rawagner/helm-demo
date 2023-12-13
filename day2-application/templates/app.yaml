@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: {{ .Release.Name }}                                                                                                                                                                                                                                                   
+  name: day2-{{ .Release.Name }}                                                                                                                                                                                                                                                   
 spec:
   destination:
     namespace: {{ .Release.Namespace }}
