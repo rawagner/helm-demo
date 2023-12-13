@@ -12,7 +12,7 @@ spec:
     ingress:
       enabled: false
     route:
-      enabled: false
+      enabled: true
     service:
       type: ''
   grafana:
