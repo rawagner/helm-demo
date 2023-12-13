@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ .Release.Name }}                                                                                                                                                                                                                                                   
+spec:
+  destination:
+    namespace: {{ .Release.Namespace }}
+  project: default
+  source:
+    path: {{ .Values.path }}
+    repoURL: {{ .Values.repoURL }}
+    targetRevision: HEAD

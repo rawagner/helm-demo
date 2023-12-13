@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "required": [
+      "path",
+      "repoURL"
+    ],
+    "properties": {
+      "path": {
+        "type": "string"
+      },
+      "repoURL": {
+        "type": "string"
+      }
+    }
+  }
