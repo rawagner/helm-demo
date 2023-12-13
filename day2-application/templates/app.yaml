@@ -4,6 +4,7 @@ metadata:
   name: day2-{{ .Release.Name }}                                                                                                                                                                                                                                                   
 spec:
   destination:
+    server: https://kubernetes.default.svc
     namespace: {{ .Release.Namespace }}
   project: default
   source:
