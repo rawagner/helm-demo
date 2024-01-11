@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "required": [
-    "baseDnsDomain"
+    "ocpVersion"
   ],
   "properties": {
     "baseDnsDomain": {
